@@ -1,10 +1,15 @@
 @function rem($size) { @return #{$size / 16px;}rem; }
 
-$accent: #d74f54;
+$accent: #e8504f;
 $bodyBase: #787579;
 $navBase: #352d2f;
 $greyText: #959595;
 
+@mixin commonTransition {
+  transition: all 500ms ease;
+}
+
+//Nav: 16 Titillium Web 50%
 //H1: 120 .15em Teko light
 //B: 26 Titillium Web 70%
 //p: 16 Titillium Web 50%
@@ -16,15 +21,95 @@ html { font-size: 16px; }
 body {
   padding: 0;
   margin:0;
-  font-size: 16px;
   font-family: 'Titillium Web', sans-serif;
-  font-size: rem(18px);
+  font-size: rem(16px);
   background: #787579;
 }
 
+.header {
+  height: rem(70px);
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__nav{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: rem(70px);
+    overflow: hidden;
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    max-height: rem(70px);
+    display: block;
+
+    svg {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__ul {
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    a {
+      display: inline-block;
+      height: 100%;
+      line-height: rem(70px);
+      text-align: center;
+      padding: 0 rem(20px);
+      text-decoration: none;
+    }
+    li {
+      color: black;
+      opacity: .5;
+      display: block;
+      height: rem(70px);
+    }
+    &:not(:hover) {
+      a.active li {
+        opacity: 1;
+        color: $accent;
+        border-bottom: 4px solid $accent;
+      }
+    }
+    a:hover li {
+      opacity: 1;
+      color: $accent;
+      border-bottom: 4px solid $accent;
+    }
+  }
+}
+
+
 main {
-  max-width: rem(1200px);
-  padding: 0 rem(15px);
-  min-height: 900px;
-  margin: 0 auto;
+  .hero {
+    padding: 0;
+    margin: 0;
+    &__slide {
+      &-list {
+        padding: 0;
+        margin: 0;
+      }
+      &-wrapper {
+        position: relative;
+        padding-top: 52.6%;
+        background: red;
+      }
+    }
+  }
 }

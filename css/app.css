@@ -7,13 +7,72 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   background: #787579; }
 
-main {
-  max-width: 75rem;
-  padding: 0 0.9375rem;
-  min-height: 900px;
-  margin: 0 auto; }
+.header {
+  height: 4.375rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100; }
+  .header__nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 4.375rem;
+    overflow: hidden; }
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 4.375rem;
+    display: block; }
+    .header__logo svg {
+      margin: 0;
+      padding: 0; }
+  .header__ul {
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto; }
+    .header__ul a {
+      display: inline-block;
+      height: 100%;
+      line-height: 4.375rem;
+      text-align: center;
+      padding: 0 1.25rem;
+      text-decoration: none; }
+    .header__ul li {
+      color: black;
+      opacity: .5;
+      display: block;
+      height: 4.375rem; }
+    .header__ul:not(:hover) a.active li {
+      opacity: 1;
+      color: #e8504f;
+      border-bottom: 4px solid #e8504f; }
+    .header__ul a:hover li {
+      opacity: 1;
+      color: #e8504f;
+      border-bottom: 4px solid #e8504f; }
+
+main .hero {
+  padding: 0;
+  margin: 0; }
+  main .hero__slide-list {
+    padding: 0;
+    margin: 0; }
+  main .hero__slide-wrapper {
+    position: relative;
+    padding-top: 52.6%;
+    background: red; }
