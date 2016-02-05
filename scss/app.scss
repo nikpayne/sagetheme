@@ -1,0 +1,30 @@
+@function rem($size) { @return #{$size / 16px;}rem; }
+
+$accent: #d74f54;
+$bodyBase: #787579;
+$navBase: #352d2f;
+$greyText: #959595;
+
+//H1: 120 .15em Teko light
+//B: 26 Titillium Web 70%
+//p: 16 Titillium Web 50%
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  padding: 0;
+  margin:0;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: rem(18px);
+  background: #787579;
+}
+
+main {
+  max-width: rem(1200px);
+  padding: 0 rem(15px);
+  min-height: 900px;
+  margin: 0 auto;
+}

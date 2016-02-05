@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.125rem;
+  background: #787579; }
+
+main {
+  max-width: 75rem;
+  padding: 0 0.9375rem;
+  min-height: 900px;
+  margin: 0 auto; }
