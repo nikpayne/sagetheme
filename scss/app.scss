@@ -1,12 +1,55 @@
+
 @function rem($size) { @return #{$size / 16px;}rem; }
 
+@function letterspacing($kerning, $pixelHeight) {
+  $rem: $pixelHeight/16;
+  $size: $kerning/1000;
+  @return #{$rem*$size}rem;
+}
+@mixin button($background, $color) {
+  display: block;
+  margin: 0 auto;
+  height: rem(50px);
+  width: rem(230px);
+  background: $background;
+
+  color: $color;
+  font-family: 'teko', sans-serif;
+  font-size: rem(20px);
+  font-weight: 300;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: .175rem;
+  text-decoration: none;
+  text-align: center;
+  line-height: rem(50px);
+}
+
+@mixin background-cover {
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+
 $accent: #e8504f;
+$bgaccent: #f63c3c;
 $bodyBase: #787579;
 $navBase: #352d2f;
 $greyText: #959595;
+$brown: #30282a;
 
 @mixin commonTransition {
   transition: all 500ms ease;
+}
+@mixin row {
+  max-width: rem(1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+@mixin column {
+  padding: 0 rem(15px);
+  width: 100%;
 }
 
 //Nav: 16 Titillium Web 50%
@@ -20,96 +63,46 @@ html { font-size: 16px; }
 
 body {
   padding: 0;
+  padding-top: rem(70px);
   margin:0;
   font-family: 'Titillium Web', sans-serif;
   font-size: rem(16px);
-  background: #787579;
+  background: #afa19b;
 }
 
-.header {
-  height: rem(70px);
-  background: white;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 100;
-
-  &__nav{
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: rem(70px);
-    overflow: hidden;
-  }
-  &__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-
-    max-height: rem(70px);
-    display: block;
-
-    svg {
-      margin: 0;
-      padding: 0;
-    }
-  }
-  &__ul {
-    position: relative;
-    text-align: center;
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    a {
-      display: inline-block;
-      height: 100%;
-      line-height: rem(70px);
-      text-align: center;
-      padding: 0 rem(20px);
-      text-decoration: none;
-    }
-    li {
-      color: black;
-      opacity: .5;
-      display: block;
-      height: rem(70px);
-    }
-    &:not(:hover) {
-      a.active li {
-        opacity: 1;
-        color: $accent;
-        border-bottom: 4px solid $accent;
-      }
-    }
-    a:hover li {
-      opacity: 1;
-      color: $accent;
-      border-bottom: 4px solid $accent;
-    }
-  }
+h2 {
+  font-family: 'teko', sans-serif;
+  font-size: rem(80px);
+  color: $brown;
+  text-transform: uppercase;
+  line-height: .9375;
+  letter-spacing: letterspacing(150, 80);
+  font-weight: 300;
+}
+h4 {
+  font-size: rem(30px);
+  line-height: 1.0;
+  letter-spacing: letterspacing(75,30);
+  font-family: 'teko', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 
-main {
-  .hero {
-    padding: 0;
-    margin: 0;
-    &__slide {
-      &-list {
-        padding: 0;
-        margin: 0;
-      }
-      &-wrapper {
-        position: relative;
-        padding-top: 52.6%;
-        background: red;
-      }
-    }
+p {
+  font-size: rem(18px);
+  line-height: 1.5;
+  color: #555;
+  font-family: 'titillium web', sans-serif;
+  font-weight: 300;
+  &.small {
+    font-size: rem(14px);
   }
 }
+
+@import "hero";
+@import "featured";
+@import "nav";
+@import "history";
+@import "stats";
+@import "services";

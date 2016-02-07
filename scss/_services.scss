@@ -1,0 +1,23 @@
+.services {
+  background: #f7f7f7;
+  h2 {
+    max-width: rem(1200px);
+    padding: 1rem rem(15px) 0 rem(15px);
+    margin: 0 auto;
+  }
+
+  .row {
+  @include row;
+  overflow: hidden;
+
+    .column {
+    @include column;
+    p {
+      color: #555555;
+    }
+
+
+
+    }
+  }
+}

@@ -10,7 +10,15 @@ gulp.task('serve', ['sass'], function() {
     proxy: 'localhost/comingsoon'
   });
   gulp.watch(['./*.html']).on('change', sync.reload);
-  gulp.watch(['./scss/app.scss'],['sass']);
+  gulp.watch([
+    './scss/_stats.scss',
+    './scss/_nav.scss',
+    './scss/_history.scss',
+    './scss/_hero.scss',
+    './scss/_featured.scss',
+    './scss/_services.scss',
+    './scss/app.scss'
+  ],['sass']);
 });
 
 gulp.task('sass', function() {

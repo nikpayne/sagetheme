@@ -1,0 +1,68 @@
+.header {
+  height: rem(70px);
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__nav{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: rem(70px);
+    overflow: hidden;
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    max-height: rem(70px);
+    display: block;
+
+    svg {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__ul {
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    a {
+      display: inline-block;
+      height: 100%;
+      line-height: rem(70px);
+      text-align: center;
+      padding: 0 rem(20px);
+      text-decoration: none;
+    }
+    li {
+      color: black;
+      opacity: .5;
+      display: block;
+      height: rem(70px);
+    }
+    &:not(:hover) {
+      a.active li {
+        opacity: 1;
+        color: $accent;
+        border-bottom: 4px solid $accent;
+      }
+    }
+    a:hover li {
+      opacity: 1;
+      color: $accent;
+      border-bottom: 4px solid $accent;
+    }
+  }
+}
