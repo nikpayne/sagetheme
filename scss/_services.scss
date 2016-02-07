@@ -12,11 +12,7 @@
 
     .column {
     @include column;
-    p {
-      color: #555555;
-    }
-
-
+    p { color: #555555; }
 
     }
   }

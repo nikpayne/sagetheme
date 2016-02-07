@@ -17,6 +17,7 @@ gulp.task('serve', ['sass'], function() {
     './scss/_hero.scss',
     './scss/_featured.scss',
     './scss/_services.scss',
+    './scss/_cta.scss',
     './scss/app.scss'
   ],['sass']);
 });

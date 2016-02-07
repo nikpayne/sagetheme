@@ -70,22 +70,33 @@ body {
   background: #afa19b;
 }
 
-h2 {
+h2, h3, h4, h5 {
   font-family: 'teko', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
   font-size: rem(80px);
   color: $brown;
-  text-transform: uppercase;
   line-height: .9375;
   letter-spacing: letterspacing(150, 80);
-  font-weight: 300;
+}
+h3 {
+  color: white;
+  font-size: rem(40px);
+  font-color: white;
+  letter-spacing: letterspacing(75,40);
 }
 h4 {
   font-size: rem(30px);
   line-height: 1.0;
   letter-spacing: letterspacing(75,30);
-  font-family: 'teko', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
+}
+h5 {
+  font-size: rem(20px);
+  line-height: 1.2;
+  letter-spacing: letterspacing(150,20);
 }
 
 
@@ -106,3 +117,4 @@ p {
 @import "history";
 @import "stats";
 @import "services";
+@import "cta";
