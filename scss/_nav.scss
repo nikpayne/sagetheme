@@ -83,7 +83,7 @@
     height: rem(70px);
     background: $navBase;
     transition: background 200ms ease;
-    cursor: pointer;
+    // cursor: pointer;
 
     span {
       display: block;
@@ -95,7 +95,7 @@
       background: white;
       max-width: rem(24px);
       user-select: none;
-      cursor: pointer;
+      // cursor: pointer;
 
       &::before {
         content: "";
@@ -141,14 +141,13 @@
       max-width: rem(70px);
       max-height: rem(70px);
 
-
       overflow: hidden;
 
       display: flex;
       flex-direction: column;
 
       background: none;
-      cursor: pointer;
+      // cursor: pointer;
 
       a {
         position: relative;
@@ -160,12 +159,12 @@
         font-family: 'teko', sans-serif;
         text-transform: uppercase;
         font-size: rem(30px);
-        cursor: pointer;
+        // cursor: pointer;
 
         li {
           position: normal;
           opacity: 1;
-          cursor: pointer;
+          // cursor: pointer;
 
           line-height: rem(70px);
           font-weight: 300;

@@ -3,11 +3,7 @@
   background: white;
   color: #30282a;
 
-  .row {
-    @include row;
-  }
   .column {
-    @include column;
     &:nth-child(2) { text-align: right; }
     small { font-size: rem(13px); }
   }

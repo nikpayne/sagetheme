@@ -1,11 +1,7 @@
 .history {
   background: white;
 
-  .row {
-    @include row;
-  }
   .column {
-    @include column;
     h2 {
       margin: rem(110px) 0 rem(35px) 0;
     }

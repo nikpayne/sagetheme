@@ -9,7 +9,6 @@
   }
 
   .row {
-    @include row;
     overflow: hidden;
     &:nth-child(2) {
       margin-bottom: rem(35px);
@@ -17,7 +16,6 @@
   }
 
   .column {
-    @include column;
     h4 {
       line-height: 1.1;
       margin-top: rem(14px);

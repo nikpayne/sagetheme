@@ -1,16 +1,11 @@
 .journal {
   background: #fafafa;
+
   h2 {
     margin-bottom: rem(40px);
     margin-top: rem(105px);
   }
-
-
-  .row {
-    @include row;
-  }
   .column {
-    @include column;
     img {
       max-width: 100%;
       margin-bottom: rem(44px);
