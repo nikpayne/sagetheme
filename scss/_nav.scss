@@ -14,7 +14,6 @@
     right: 0;
     width: 100%;
     height: rem(70px);
-    overflow: hidden;
   }
   &__logo {
     position: absolute;
@@ -73,6 +72,119 @@
           border-bottom: 4px solid $accent;
         }
       }
+    }
+  }
+  &__hamburger {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: rem(70px);
+    height: rem(70px);
+    background: $navBase;
+    transition: background 200ms ease;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: relative;
+      z-index: 100;
+      height: rem(2px);
+      margin: rem(33px) rem(23px) rem(33px) auto;
+      width: 100%;
+      background: white;
+      max-width: rem(24px);
+      user-select: none;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: block;
+        background: white;
+        height: rem(2px);
+        margin: rem(-6px) 0 0 0;
+      }
+      &::after {
+        content: "";
+        display: block;
+        background: white;
+        height: rem(2px);
+        margin: rem(10px) 0 0 0;
+      }
+    }
+    &.active {
+      background: $accent;
+      transition: background 200ms ease;
+      span {
+        background: rgba(0,0,0,0);
+        &::before {
+          margin: 0;
+          transform: rotateZ(45deg);
+        }
+        &::after {
+          margin: rem(-2px) 0 0 0;
+          transform: rotatez(-45deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem(750px)) {
+  .header {
+    &__ul {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: rem(70px);
+      height: rem(70px);
+      max-width: rem(70px);
+      max-height: rem(70px);
+
+
+      overflow: hidden;
+
+      display: flex;
+      flex-direction: column;
+
+      background: none;
+      cursor: pointer;
+
+      a {
+        position: relative;
+        z-index: 110;
+        height: 100%;
+        max-width: rem(260px);
+        margin: 0 auto;
+        color: white;
+        font-family: 'teko', sans-serif;
+        text-transform: uppercase;
+        font-size: rem(30px);
+        cursor: pointer;
+
+        li {
+          position: normal;
+          opacity: 1;
+          cursor: pointer;
+
+          line-height: rem(70px);
+          font-weight: 300;
+          color: white;
+          letter-spacing: letterspacing(30,150);
+
+          border-bottom: none !important;
+        }
+        &.active li {
+          color: yellow !important;
+        }
+
+      }
+    }
+
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      flex-align: center;
     }
   }
 }

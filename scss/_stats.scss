@@ -3,7 +3,7 @@
   .column {
     @include column;
     text-align: center;
-    padding: 8rem 0 3rem 0;
+    padding: 4rem 0 3rem 0;
   }
   background: white;
   &__num {

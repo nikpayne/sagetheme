@@ -6,17 +6,22 @@
     &-list {
       padding: 0;
       margin: 0;
+      position: relative;
     }
     &-wrapper {
       position: relative;
+      width: 100%;
       padding-top: 52.6%;
       background: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-
+      &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
     &-main {
       position: absolute;
@@ -65,62 +70,6 @@
           background: $accent;
           color: white;
         }
-      }
-    }
-  }
-  &__pagination {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    cursor: pointer;
-
-    &-links {
-      display: block;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      margin-bottom: rem(-6px);
-
-      &:hover {
-        .active {
-          background: rgba(255,255,255,.6);
-          background-clip: padding-box;
-          &:hover {
-            background: white;
-            background-clip: padding-box;
-          }
-        }
-      }
-    }
-
-    &-link {
-      box-sizing: content-box;
-      display: inline-block;
-      height: rem(4px);
-      width: rem(40px);
-
-      border-top: rem(40px) solid rgba(255,255,255,0);
-      border-bottom: rem(40px) solid rgba(255,255,255,0);
-      border-right: rem(4px) solid rgba(255,255,255,0);
-      border-left: rem(4px) solid rgba(255,255,255,0);
-
-      background: rgba(255,255,255,.2);
-      background-clip: padding-box;
-      cursor: pointer;
-
-      &:hover {
-        background: white;
-        background-clip: padding-box;
-      }
-      &.active {
-        background: rgba(255,255,255,1);
-        background-clip: padding-box;
-      }
-      &:active {
-        background: $accent;
-        background-clip: padding-box;
       }
     }
   }

@@ -54,6 +54,22 @@
     font-size: rem(18px);
     color: $accent;
   }
+  footer {
+    padding: rem(22px) rem(15px) rem(58px) rem(15px);
+    text-align: center;
+
+    a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      h5 {
+        border-bottom: none;
+        margin-bottom: rem(4px);
+        color: $brown;
+      }
+      border-bottom: 4px solid $brown;
+    }
+  }
 }
 
 @media screen and (max-width: rem(900px)) {

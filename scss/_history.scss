@@ -6,21 +6,52 @@
   }
   .column {
     @include column;
+    h2 {
+      margin: rem(110px) 0 rem(35px) 0;
+    }
     a {
-      @include button(black, white);
-      margin: 0 auto 0 0;
+      @include button($accent, white);
+      margin: 0 auto 4rem 0;
+    }
+    p:last-of-type {
+      margin-bottom: rem(50px);
     }
     &:nth-child(2) {
-      text-align: center;
+      text-align: right;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
     img.logotype {
-      max-width: rem(400px);
+      max-width: rem(360px);
       display: block;
-      margin: 0 auto;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: rem(900px)) {
+  .history {
+    .row {
+      flex-direction: column;
+    }
+    .column {
+      h2 {
+        text-align: center;
+        margin-top: 4rem;
+      }
+      a {
+        margin: 0 auto 4rem auto;
+      }
+      p {
+        display: block;
+        max-width: rem(600px);
+        margin: 0 auto;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
     }
   }
 }
