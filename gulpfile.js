@@ -18,6 +18,8 @@ gulp.task('serve', ['sass'], function() {
     './scss/_featured.scss',
     './scss/_services.scss',
     './scss/_cta.scss',
+    './scss/_journal.scss',
+    './scss/_footer.scss',
     './scss/app.scss'
   ],['sass']);
 });

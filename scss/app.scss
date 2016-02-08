@@ -70,6 +70,10 @@ body {
   background: #afa19b;
 }
 
+main {
+  overflow: hidden;
+}
+
 h2, h3, h4, h5 {
   font-family: 'teko', sans-serif;
   text-transform: uppercase;
@@ -99,7 +103,6 @@ h5 {
   letter-spacing: letterspacing(150,20);
 }
 
-
 p {
   font-size: rem(18px);
   line-height: 1.5;
@@ -111,10 +114,12 @@ p {
   }
 }
 
+@import "nav";
 @import "hero";
 @import "featured";
-@import "nav";
 @import "history";
 @import "stats";
 @import "services";
 @import "cta";
+@import "journal";
+@import "footer";

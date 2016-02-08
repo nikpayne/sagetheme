@@ -6,6 +6,7 @@
   right: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 0 1rem rgba(0,0,0,.1);
 
   &__nav{
     position: relative;
@@ -59,10 +60,19 @@
         border-bottom: 4px solid $accent;
       }
     }
-    a:hover li {
-      opacity: 1;
-      color: $accent;
-      border-bottom: 4px solid $accent;
+    &:hover {
+      a {
+        &.active li {
+          opacity: 1;
+          border-bottom: none;
+          color: $accent;
+        }
+        &:hover li {
+          opacity: 1;
+          color: $accent;
+          border-bottom: 4px solid $accent;
+        }
+      }
     }
   }
 }

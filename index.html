@@ -24,12 +24,12 @@
           </svg>
         </a>
         <ul class="header__ul">
-          <a href="#" class="active"><li>Home</li></a>
-          <a href="#"><li>Projects</li></a>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Services</li></a>
-          <a href="#"><li>Blog</li></a>
-          <a href="#"><li>Get in Touch</li></a>
+          <a href="#" class="active"><li title="home">Home</li></a>
+          <a href="#"><li title="projects">Projects</li></a>
+          <a href="#"><li title="about">About</li></a>
+          <a href="#"><li title="services">Services</li></a>
+          <a href="#"><li title="blog">Blog</li></a>
+          <a href="#"><li title="get in touch">Get in Touch</li></a>
         </ul>
         <div class="header__social"></div>
       </nav>
@@ -51,12 +51,14 @@
           </li>
         </ul>
 
-        <div class="hero__pagination">
-          <div class="hero__pagination-link active"><span></span></div>
-          <div class="hero__pagination-link"><span></span></div>
-          <div class="hero__pagination-link"><span></span></div>
-          <div class="hero__pagination-link"><span></span></div>
-        </div>
+        <nav class="hero__pagination">
+          <ul class="hero__pagination-links">
+            <li class="hero__pagination-link active"></li>
+            <li class="hero__pagination-link"></li>
+            <li class="hero__pagination-link"></li>
+            <li class="hero__pagination-link"></li>
+          </ul>
+        </nav>
 
       </section>
 
@@ -129,44 +131,106 @@ Current site section contains general information about our latest projects. We 
         </div>
       </section>
 
+
       <section class="services">
-        <h2>Services</h2>
-        <div class="row">
-          <div class="column">
-            <h4>Engaging UI/UX Designs</h4>
+
+        <header class="row">
+          <hgroup class="column">
+            <h2>Services</h2>
+          </hgroup>
+        </header>
+
+        <section class="row">
+
+          <article class="column">
+            <img src="img/icon_flexible.svg" alt="multi-screen icon" />
+            <h4>Exclusive and Flexible <br>Theme</h4>
             <p>Brand magically to real smells traditional mild each valuable. Credit-card but a customer red feedback bonus effective takes. Works ideal price juicy plush millions desire great clean market ready product.</p>
-          </div>
-          <div class="column">
-            <h4>Engaging UI/UX Designs</h4>
-            <p>Brand magically to real smells traditional mild each valuable. Credit-card but a customer red feedback bonus effective takes. Works ideal price juicy plush millions desire great clean market ready product.</p>
-          </div>
-          <div class="column">
-            <h4>Engaging UI/UX Designs</h4>
-            <p>Brand magically to real smells traditional mild each valuable. Credit-card but a customer red feedback bonus effective takes. Works ideal price juicy plush millions desire great clean market ready product.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <h4>Engaging UI/UX Designs</h4>
-            <p>Brand magically to real smells traditional mild each valuable. Credit-card but a customer red feedback bonus effective takes. Works ideal price juicy plush millions desire great clean market ready product.</p>
-          </div>
-          <div class="column">
-            <h4>Hand-crafted with Love</h4>
+          </article>
+
+          <article class="column">
+            <img src="img/icon_browser.svg" alt="a browser icon" />
+            <h4>Material and Retina <br>Design</h4>
+            <p>Warm clean bold. World's permanent a any this rosy multi-purpose. Magically fat-free deeply remarkable amazing wherever easily much spicey simulated ideal UI high-tech sensible.</p>
+          </article>
+
+          <article class="column">
+            <img src="img/icon_support.svg" alt="a life buoy icon" />
+            <h4>Friendly Customer <br>Support</h4>
+            <p>Yourself perfect plus parents pop-top people never price ordinary fat-free now. Advanced quick handcrafted flavored roasted survey triple economical smart. Sharpest refreshing brand.</p>
+          </article>
+
+        </section>
+
+        <section class="row">
+
+          <article class="column">
+            <img src="img/icon_support.svg" alt="an imac icon" />
+            <h4>Engaging UI/UX <br>Designs</h4>
+            <p>Brand magically to real smells traditional mild each valuable. Credit-card but a customer red feedback bonus effective takes. Works ideal price juicy plush millions desire great clean market ready product.<p>
+          </article>
+
+          <article class="column">
+            <img src="img/icon_handcrafted.svg" alt="a heart icon" />
+            <h4>Hand-crafted <br>with Love</h4>
             <p>Perfect desire and don't newest splash more if perfect asked mega. Catch racy surrender most like wealth. Dual artificial cheap advertising vast opportunity. Space deluxe idel UI and UX clean mountain as.</p>
-          </div>
-          <div class="column">
-            <h4>Fully Responsive and Flexible Design</h4>
-            <p>Smart messy lost register squeezable a. Tropical ordinary youthful elegent comfort terrific. Sleek herbal all-over a spectacular kids. Desire picky happy style to. Satisfied compare mothers fast spicey dry longer.</p>
-          </div>
-        </div>
+          </article>
+
+          <article class="column">
+            <img src="img/icon_responsive.svg" alt="a landscape icon" />
+            <h4>Fully Responsive and <br>Flexible Design</h4>
+            <p>Smart messy lost register squeezable a. Tropical ordinary youthful elegent comfort terrific. Sleek herbal all-over a spectacular kids. Desire picky happy style to. Satisfied compare mothers fast spicey dry longer.<p>
+          </article>
+
+        </section>
+
       </section>
 
-      <section class="cta">
+
+      <aside class="cta">
         <h3>This is a Call to Action Area</h3>
         <p>You can use this current block to place some important information</p>
         <a href="#">
           <h5>Purchase Sage Right Now</h5>
         </a>
+      </aside>
+
+      <section class="journal">
+
+        <header class="row">
+          <hgroup class="column">
+            <h2>Journal</h2>
+          </hgroup>
+        </header>
+
+        <section class="row">
+          <article class="column">
+            <img src="img/journal_1.jpg" alt="post-it notes" />
+            <span class="category">News</span>
+            <h4>Flexible Multi Concept Porfolio Theme</h4>
+            <p>Spicey available value bonus satisfied every limited register. Permanent tough flexible what take mouthwatering. Bigger made quick flexible so guaranteed most open try compact inside.</p>
+            <a href="#">Explore More</a>
+          </article>
+          <article class="column">
+            <img src="img/journal_2.jpg" alt="an iphone screen" />
+            <span class="category">Technology</span>
+            <h4>Hand Crafted with Love</h4>
+            <p>Choice vibrant handcrafted agree compare squeezable spicey vibrant. Our silky newer polished it's confident all lather sold deal class love. Lower to agree quenches dry will. A quickly much discover keeps.</p>
+            <a href="#">Explore More</a>
+          </article>
+          <article class="column">
+            <img src="img/journal_3.jpg" alt="a laptop and glasses" />
+            <span class="category">Life, News</span>
+            <h4>Exclusive and Very Flexible Theme Ever</h4>
+            <p>Whiter guaranteed to sensible stimulates flip choose quickly warranty oily buy money. Pennies quenches polished. Believe neat bigger satisfying awesome natural spectacular healthy deeply.</p>
+            <a href="#">Explore More</a>
+          </article>
+        </section>
+
+        <footer>
+          <a href="#">Show More Articles</a>
+        </footer>
+
       </section>
 
     </main>
