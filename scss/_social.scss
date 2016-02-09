@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    &:first-of-type { max-width: 50%; }
   }
   &__column {
     margin: 0 rem(100px) 0 auto;
@@ -28,28 +28,45 @@
       flex-grow: 1;
       height:rem(275px);
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
+
+      &:hover { background: $accent; }
       i {
         float: left;
+        font-size: rem(56px);
+        color: white;
+        min-width: rem(120px);
+        text-align: right;
+        &:first-of-type {
+          padding-top: .5rem;
+          padding-right: 2rem;
+          padding-left: 1rem;
+        }
+        &.fa-google-plus {
+          font-size: rem(50px);
+        }
       }
-
       h3 {
         margin: 0;
         font-size: rem(40px);
-        margin-bottom: rem(-4px);
+        margin-bottom: rem(-8px);
+        letter-spacing: letterspacing(150, 40);
+        min-width: rem(170px);
+        hyphens: auto;
       }
       p {
+        font-size: rem(16px);
         margin: 0;
+        color: white;
+        opacity: .5;
       }
     }
     &:nth-child(1){ background: #30282a; }
     &:nth-child(2){ background: #352d2f; }
   }
-
-
-
 
   form {
     display: flex;
@@ -80,6 +97,37 @@
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: letterspacing(150,20);
+    }
+  }
+}
+
+@media screen and (max-width: rem(1200px)) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    &__block {
+      &:first-of-type { max-width: none; }
+      .social__column {
+        max-width: rem(600px);
+        margin: 0 auto;
+        padding: rem(40px) rem(15px);
+        h2 {
+          margin-bottom: rem(30px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: rem(700px)) {
+  .social {
+    &__row {
+      flex-direction: column;
+      a {
+        max-height: rem(200px) !important;
+        padding: 0;
+        min-width: 100%;
+      }
     }
   }
 }
