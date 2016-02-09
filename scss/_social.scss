@@ -1,17 +1,14 @@
 .social {
   display: flex;
   flex-direction: row;
-
   background: #fafafa;
 
   &__block {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
-    &:last-child {
-      background: $brown;
-    }
+    height: 100%;
   }
   &__column {
     margin: 0 rem(100px) 0 auto;
@@ -25,30 +22,64 @@
   &__row {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    flex-grow: 1;
     a {
-      display: block;
-      min-width: 100%;
-      min-height:rem(275px);
-      background: red;
+      flex-grow: 1;
+      height:rem(275px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        float: left;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: rem(40px);
+        margin-bottom: rem(-4px);
+      }
+      p {
+        margin: 0;
+      }
     }
+    &:nth-child(1){ background: #30282a; }
+    &:nth-child(2){ background: #352d2f; }
   }
 
 
 
 
   form {
+    display: flex;
+    flex-direction: row;
+
     input[type="email"] {
       height: rem(50px);
       padding: 0 .85rem;
-
+      margin: 0;
       background: white;
       border: 1px solid #e5e5e5;
-
       font-size: rem(16px);
       color: black;
       outline: none;
-
+      flex-grow: 1;
+    }
+    button[type="submit"] {
+      @include pink-button;
+      display: block;
+      margin: 0;
+      height: rem(50px);
+      width: rem(120px);
+      cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: rem(20px);
+      font-family: 'teko', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: letterspacing(150,20);
     }
   }
 }

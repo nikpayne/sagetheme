@@ -449,8 +449,13 @@ p {
         text-decoration: none;
         text-align: center;
         line-height: 3.125rem;
+        background: #e8504f;
+        color: white;
         display: block;
         margin: 2.5rem auto 0 0; }
+        .featured__article-column a:hover {
+          background: #30282a;
+          color: white; }
       .featured__article-column.left {
         margin: 0 6.25rem 0 auto; }
       .featured__article-column.right {
@@ -520,7 +525,12 @@ p {
     text-decoration: none;
     text-align: center;
     line-height: 3.125rem;
+    background: #e8504f;
+    color: white;
     margin: 0 auto 4rem 0; }
+    .history .column a:hover {
+      background: #30282a;
+      color: white; }
   .history .column p:last-of-type {
     margin-bottom: 3.125rem; }
   .history .column:nth-child(2) {
@@ -789,6 +799,14 @@ p {
         max-height: 5rem; }
       .quotes .logos a:nth-child(1) img {
         max-height: 3.4375rem; }
+      .quotes .logos a:nth-child(3) img {
+        max-height: 5rem; }
+      .quotes .logos a:nth-child(4) img {
+        max-height: 4.375rem; }
+      .quotes .logos a:nth-child(5) img {
+        max-height: 5.3125rem; }
+      .quotes .logos a:nth-child(6) img {
+        max-height: 2.5rem; }
 
 .social {
   display: -webkit-flex;
@@ -805,12 +823,11 @@ p {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%; }
-    .social__block:last-child {
-      background: #30282a; }
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
   .social__column {
     margin: 0 6.25rem 0 auto;
     padding: 0 0.9375rem; }
@@ -826,22 +843,78 @@ p {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-align-items: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline; }
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
     .social__row a {
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      height: 17.1875rem;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .social__row a i {
+        float: left; }
+      .social__row a h3 {
+        margin: 0;
+        font-size: 2.5rem;
+        margin-bottom: -0.25rem; }
+      .social__row a p {
+        margin: 0; }
+    .social__row:nth-child(1) {
+      background: #30282a; }
+    .social__row:nth-child(2) {
+      background: #352d2f; }
+  .social form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .social form input[type="email"] {
+      height: 3.125rem;
+      padding: 0 .85rem;
+      margin: 0;
+      background: white;
+      border: 1px solid #e5e5e5;
+      font-size: 1rem;
+      color: black;
+      outline: none;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+    .social form button[type="submit"] {
+      background: #e8504f;
+      color: white;
       display: block;
-      min-width: 100%;
-      min-height: 17.1875rem;
-      background: red; }
-  .social form input[type="email"] {
-    height: 3.125rem;
-    padding: 0 .85rem;
-    background: white;
-    border: 1px solid #e5e5e5;
-    font-size: 1rem;
-    color: black;
-    outline: none; }
+      margin: 0;
+      height: 3.125rem;
+      width: 7.5rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: 1.25rem;
+      font-family: 'teko', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.1875rem; }
+      .social form button[type="submit"]:hover {
+        background: #30282a;
+        color: white; }
 
 .footer {
   padding: 3.125rem 0;
@@ -901,7 +974,7 @@ p {
     display: inline-block;
     height: 0.25rem;
     width: 2.5rem;
-    border-top: 2.5rem solid rgba(255, 255, 255, 0);
+    border-top: 0.25rem solid rgba(255, 255, 255, 0);
     border-bottom: 2.5rem solid rgba(255, 255, 255, 0);
     border-right: 0.25rem solid rgba(255, 255, 255, 0);
     border-left: 0.25rem solid rgba(255, 255, 255, 0);

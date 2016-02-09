@@ -53,6 +53,15 @@ $brown: #30282a;
   width: 100%;
 }
 
+@mixin pink-button {
+  background: $accent;
+  color: white;
+  &:hover {
+    background: $brown;
+    color: white;
+  }
+}
+
 * { box-sizing: border-box; }
 
 html { font-size: 16px; }
@@ -121,5 +130,4 @@ p {
 @import "quotes";
 @import "social";
 @import "footer";
-
 @import "pagination";

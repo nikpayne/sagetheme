@@ -30,12 +30,10 @@
     display: inline-block;
     height: rem(4px);
     width: rem(40px);
-
-    border-top: rem(40px) solid rgba(255,255,255,0);
+    border-top: rem(4px) solid rgba(255,255,255,0);
     border-bottom: rem(40px) solid rgba(255,255,255,0);
     border-right: rem(4px) solid rgba(255,255,255,0);
     border-left: rem(4px) solid rgba(255,255,255,0);
-
     background: rgba(255,255,255,.2);
     background-clip: padding-box;
     cursor: pointer;

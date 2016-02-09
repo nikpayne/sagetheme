@@ -41,9 +41,11 @@
         max-height: rem(80px);
       }
 
-      &:nth-child(1) img {
-        max-height: rem(55px);
-      }
+      &:nth-child(1) img { max-height: rem(55px); }
+      &:nth-child(3) img { max-height: rem(80px); }
+      &:nth-child(4) img { max-height: rem(70px); }
+      &:nth-child(5) img { max-height: rem(85px); }
+      &:nth-child(6) img { max-height: rem(40px); }
     }
   }
 }
