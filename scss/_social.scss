@@ -1,0 +1,54 @@
+.social {
+  display: flex;
+  flex-direction: row;
+
+  background: #fafafa;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &:last-child {
+      background: $brown;
+    }
+  }
+  &__column {
+    margin: 0 rem(100px) 0 auto;
+    padding: 0 rem(15px);
+    h2 {
+      margin-top: 0;
+      margin-bottom: rem(50px);
+    }
+    p { margin: rem(30px) 0; }
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    a {
+      display: block;
+      min-width: 100%;
+      min-height:rem(275px);
+      background: red;
+    }
+  }
+
+
+
+
+  form {
+    input[type="email"] {
+      height: rem(50px);
+      padding: 0 .85rem;
+
+      background: white;
+      border: 1px solid #e5e5e5;
+
+      font-size: rem(16px);
+      color: black;
+      outline: none;
+
+    }
+  }
+}

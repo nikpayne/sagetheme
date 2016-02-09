@@ -66,9 +66,9 @@ body {
   background: #afa19b;
 }
 
-main {
-  overflow: hidden;
-}
+main { overflow: hidden; }
+
+p { hyphens: auto;  }
 
 h2, h3, h4, h5 {
   font-family: 'teko', sans-serif;
