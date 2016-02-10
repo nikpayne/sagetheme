@@ -132,6 +132,24 @@ p {
         opacity: 1;
         color: #e8504f;
         border-bottom: 4px solid #e8504f; }
+  .header__social {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4.375rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .header__social a {
+      height: 4.375rem;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .header__social a img {
+        margin-right: 1.125rem; }
+      .header__social a:last-child {
+        margin-right: .75rem; }
 
 @media screen and (max-width: 46.875rem) {
   .header__nav {

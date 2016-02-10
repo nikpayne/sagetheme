@@ -72,6 +72,24 @@
       }
     }// END LINK STYLING
   }
+  &__social {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: rem(70px);
+    display: flex;
+    a {
+      height: rem(70px);
+      display: flex;
+      img {
+        margin-right: rem(18px);
+      }
+      &:last-child {
+        margin-right: .75rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: rem(750px)) {
