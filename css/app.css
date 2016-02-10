@@ -352,7 +352,9 @@ p {
     letter-spacing: 0.7rem;
     max-width: 50rem; }
   p {
-    max-width: 50rem; } }
+    max-width: 50rem; }
+  .hero .pagination {
+    margin-bottom: -1.25rem; } }
 
 @media screen and (max-width: 50rem) {
   .hero h1 {
@@ -468,14 +470,9 @@ p {
       .featured__article-column.right {
         margin: 0 auto 0 6.25rem; }
   .featured__image-block {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     max-width: 100%; }
     .featured__image-block img {
+      float: left;
       width: 33.33%; }
 
 @media screen and (max-width: 68.75rem) {
@@ -840,7 +837,9 @@ p {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      flex-align: center; }
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .quotes .logos a:hover {
         background: #e8504f; }
       .quotes .logos a img {
@@ -861,7 +860,11 @@ p {
   .quotes .row:not(.logos) {
     padding: 1.875rem 0 0 0; }
   .quotes .pagination.logos {
-    padding-bottom: 1.875rem; } }
+    padding-bottom: 1.875rem; }
+  .quotes blockquote:before {
+    display: none; }
+  .quotes .logos a img {
+    max-width: 6.25rem; } }
 
 .social {
   display: -webkit-flex;

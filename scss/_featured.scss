@@ -64,10 +64,9 @@
     }
   }
   &__image-block {
-    display: flex;
-    flex-direction: row;
     max-width: 100%;
     img {
+      float: left;
       width: 33.33%;
     }
   }

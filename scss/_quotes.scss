@@ -80,7 +80,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      flex-align: center;
+      align-items: center;
       &:hover {
         background: $accent;
       }
@@ -110,5 +110,16 @@
         padding-bottom: rem(30px);
       }
     }
+    blockquote {
+      &:before {
+        display: none;
+      }
+    }
+    .logos {
+      a {
+        img { max-width: rem(100px); }
+      }
+    }
+
   }
 }

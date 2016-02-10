@@ -93,6 +93,7 @@
   p {
     max-width: rem(800px);
   }
+  .hero .pagination { margin-bottom: rem(-20px); }
 }
 @media screen and (max-width: rem(800px)) {
   .hero h1 {
