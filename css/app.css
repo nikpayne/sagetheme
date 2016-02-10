@@ -151,7 +151,7 @@ p {
       .header__social a:last-child {
         margin-right: .75rem; }
 
-@media screen and (max-width: 46.875rem) {
+@media screen and (max-width: 53.125rem) {
   .header__nav {
     position: absolute;
     z-index: 120;
@@ -263,7 +263,9 @@ p {
         .header__nav-links li.active a {
           color: yellow !important; }
         .header__nav-links li:hover a {
-          color: yellow !important; } }
+          color: yellow !important; }
+  .header__social {
+    display: none; } }
 
 .hero {
   position: relative;

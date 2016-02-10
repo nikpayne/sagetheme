@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: rem(750px)) {
+@media screen and (max-width: rem(850px)) {
   .header {
     &__nav {
       position: absolute;
@@ -208,6 +208,9 @@
       }
 
 
+    }
+    &__social {
+      display: none;
     }
   }
 }
