@@ -774,7 +774,18 @@ p {
     max-width: 29.375rem;
     color: white;
     font-weight: 300;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
+    .quotes blockquote:before {
+      display: block;
+      min-height: 1.9375rem;
+      min-width: 1.75rem;
+      content: url("../img/quotes.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: -3.4375rem;
+      margin-top: 0.5rem; }
   .quotes .logos {
     padding: 3.75rem 0;
     display: -webkit-flex;

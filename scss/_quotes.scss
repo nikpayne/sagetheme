@@ -19,6 +19,18 @@
     color: white;
     font-weight: 300;
     margin: 0 auto;
+    position: relative;
+    &:before {
+      display: block;
+      min-height: rem(31px);
+      min-width: rem(28px);
+      content: url('../img/quotes.svg');
+      position: absolute;
+      top: 0;
+      left:0;
+      margin-left: rem(-55px);
+      margin-top: rem(8px);
+    }
   }
   .logos {
     padding: rem(60px) 0;

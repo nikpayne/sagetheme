@@ -1,7 +1,6 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Teko:300|Titillium+Web:300";
 
-
 @function rem($size) { @return #{$size / 16px;}rem; }
 
 @function letterspacing($kerning, $pixelHeight) {

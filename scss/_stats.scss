@@ -10,7 +10,6 @@
     padding: 0;
     margin-bottom: rem(-28px);
     margin-top: rem(-14px);
-
     color: $bgaccent;
     font-family: 'teko', sans-serif;
     font-weight: 300;
@@ -22,7 +21,6 @@
     display: block;
     margin: 0;
     padding: 0;
-
     color: #353535;
     font-family: 'titillium web', sans-serif;
     font-size: rem(16px);
@@ -34,8 +32,6 @@
   .stats .row {
     display: flex;
     flex-direction: column;
-    .column {
-      padding: 2rem 0;
-    }
+    .column { padding: 2rem 0; }
   }
 }
